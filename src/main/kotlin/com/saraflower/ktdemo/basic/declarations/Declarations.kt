@@ -1,8 +1,16 @@
-package com.saraflower.ktdemo.basic
+package com.saraflower.ktdemo.basic.declarations
+
+typealias PersonSet = Set<Person>
 
 fun main() {
     val number = 5
     val number2: Short = 5
+
+    val names = arrayListOf("Sara", "Abel")
+    println(names[1])
+
+    val normalPersons: Set<Person>
+    val persons: PersonSet
 
     val person1 = Person("Sara", 150)
     person1.name = "Serah"

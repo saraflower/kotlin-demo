@@ -1,9 +1,18 @@
-package com.saraflower.ktdemo.basic;
+package com.saraflower.ktdemo.basic.declarations;
+
+import java.util.Arrays;
+import java.util.Set;
 
 public class Declarations {
     public static void main(String[] args) {
         final var number = 5;
         final short number2 = 5;
+
+        var names = Arrays.asList("Sara", "Abel");
+        System.out.println(names.get(1));
+
+        final Set<Person> normalPersons;
+        final Set<Person> persons;
 
         final var person1 = new JavaPerson("Sara", 150);
         person1.name = "Serah";
