@@ -19,6 +19,29 @@ public class Declarations {
 
         JavaPerson person2 = new JavaPerson("Variable person", 300);
         person2 = new JavaPerson("I changed", 450);
+
+        final Object something = person1;
+        final JavaPerson alsoSomething = (JavaPerson) something;
+
+        if(something instanceof JavaPerson) {
+            System.out.println(((JavaPerson) something).id);
+        }
+
+        final var change = 4.22;
+        System.out.printf(
+                "$ Change is $%s, in $%n", change
+        );
+
+        final var numerator = 10.99;
+        final var denominator = 20.00;
+
+        System.out.println(
+                        "Value of " + numerator + "\n" +
+                        "divided by " + denominator + "\n" +
+                        "is " + numerator/denominator
+        );
+
+        System.out.println(person1);
     }
 }
 
@@ -32,5 +55,13 @@ class JavaPerson {
     ) {
         this.name = name;
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "%s(name=%s, id=%s)",
+                getClass().getSimpleName(), name, id
+        );
     }
 }
