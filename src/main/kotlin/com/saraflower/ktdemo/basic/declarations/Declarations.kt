@@ -40,6 +40,8 @@ fun main() {
     )
 
     println(person1)
+
+    val filePath = """C:\somedir\somedir2"""
 }
 
 class Person(var name: String, val id: Int) {

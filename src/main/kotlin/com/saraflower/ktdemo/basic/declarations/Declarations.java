@@ -42,6 +42,8 @@ public class Declarations {
         );
 
         System.out.println(person1);
+
+        final var filePath = "C:\\somedir\\somedir2";
     }
 }
 
