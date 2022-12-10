@@ -7,6 +7,8 @@ fun main() {
     //long = int will not work automatically, there is no number widening
     long = int.toLong()
 
+    val anotherLong: Long = 5 //Note that literals do get widened automatically, no need to specify the 'L'
+
     val byte: Byte = 111
     val short: Short = byte.toShort() // same here
 
