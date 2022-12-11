@@ -63,6 +63,10 @@ fun main() {
     str6?.let { x -> println(x) }
 
     println(str6 == "something") //Works because == is a safe operator, only evaluates if not null
+
+    val nullableInts = arrayOfNulls<Int>(5)
+
+    nullableInts.forEach { println(it) }
 }
 
 fun printText(text: String) {
